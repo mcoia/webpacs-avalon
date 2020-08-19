@@ -5,7 +5,7 @@ function hideLinks(){
     stringsToHide[3] = new Array ("Missouri Valley eBook", "moval");
 	stringsToHide[4] = new Array ("State Fair eBook");
 	stringsToHide[6] = new Array ("atsu");
-	stringsToHide[7] = new Array ("culver");
+	stringsToHide[7] = new Array ("Culver-Stockton");
 	stringsToHide[8] = new Array ("hlg");
 	stringsToHide[9] = new Array ("State Tech");
 	stringsToHide[10] = new Array ("MACC");

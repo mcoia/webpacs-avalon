@@ -1,11 +1,15 @@
 
 
-.clusterLogo {
-    top:15px;
+.clusterLogoRight {
+    top:20px;
 }
 
 .topLogoImage {
    padding:23px 15px;
+}
+
+.topLogoImage img {
+	max-width: 400px;
 }
 
 #patButAR { display: none; }

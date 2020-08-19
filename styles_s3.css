@@ -26,3 +26,7 @@
 .topLogo img {
     display:block; 
 }
+
+div .navigationRowRecord .buttonLeft { display: none; }
+
+div .requestDiv .button { display: none; }

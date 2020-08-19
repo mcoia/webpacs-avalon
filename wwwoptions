@@ -351,6 +351,7 @@ ICON_BUT_REQUEST_MULTI11=<div class="ICON_BUT_REQUEST_MULTI btn btn-default catn
 ICON_BUT_REQUEST_RESET11=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="ICON_BUT_REQUEST_RESET btn btn-default catnav"> Reset Form </div></div>
 ICON_BUT_REQUEST_SELECTED11=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="ICON_BUT_REQUEST_SELECTED btn btn-default catnav"> Request Selected </div></div>
 ICON_REQUEST6=<div class="ICON_BUT_REQUEST_SELECTED btn btn-default catnav"> Request </div>
+ICON_BUT_REQUEST3=<span class="buttonLeft"><img src="/screens/ico_target.png" alt=""><span class="buttonText">Request</span></span>
 ICON_BUT_REQUEST=<span class="button"><img src="/screens/ico_target.png" alt=""><span class="buttonText">Request</span></span>
 ICON_BUT_REQUEST_ALL=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Request Available</span></span></div></div>
 ICON_BUT_REQUEST_MULTI=<span class="button"><img src="/screens/ico_request_multi.png" alt=""><span class="buttonText">Request Saved</span></span>
@@ -827,15 +828,15 @@ LOC_vmsii=/screens/vmsii-equipment.png
 LOC_vmvii=/screens/vmvii-audiovisual.png
 LOC_vmvli=/screens/vmvli-pop-video.png
 LOC_vmxii=/screens/vmxii-reserve.png
-LOC_vscii=/screens/vscii-audiobooks.png
-LOC_vmaii=/screens/vmaii-archives.pdf
-LOC_vmfii=/screens/vmfii-art.png
-LOC_vmiii=/screens/vmiii-main.png
-LOC_vmkii=/screens/vmkii-career.png
-LOC_vmlii=/screens/murrell2.pdf
-LOC_vmmii=/screens/vmmii-ashford.pdf
-LOC_vmpci=/screens/vmpci-current-per.png
-LOC_vmpii=/screens/vmpii-periodicals.png
+LOC_vscii=/screens/vscii-audiobooks.jpg
+LOC_vmaii=/screens/vmaii-archives.jpg
+LOC_vmfii=/screens/vmfii-art.jpg
+LOC_vmiii=/screens/vmiii-main.jpg
+LOC_vmkii=/screens/vmkii-career.jpg
+LOC_vmlii=/screens/vmlii-popular.jpg
+LOC_vmmii=/screens/vmmii-ashford.jpg
+LOC_vmpci=/screens/vmpci-currentper.jpg
+LOC_vmpii=/screens/vmpii-periodicals.jpg
 LOC_vaaii=/screens/vaaii-awardwinners.png
 LOC_vacii=/screens/vacii-curriculum.png
 LOC_vajii=/screens/vajii-juvenile.png
