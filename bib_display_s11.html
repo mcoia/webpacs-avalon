@@ -15,25 +15,76 @@
 
 	addLoadEvent( function() {
 		
-		var cluster = '6lanc';
+		var cluster = '6ques';
 		var recno_pattern = /b\d{7}/;
 		var encore_recno = "";
 
 		// Gets record number from permanent link
 		var cluster_recno = recno_pattern.exec($(".ICON_RECORDLINK").children("a").attr("href"));
-		var bibno_fetcher_url = 'http://library.truman.edu/Mobius/encore_bibno_fetcher.php?bibno=' + cluster_recno;
+		var bibno_fetcher_url = 'https://library.truman.edu/Mobius/encore_bibno_fetcher.php?bibno=' + cluster_recno;
 		
 		// Get MOBIUS bib number via php
-		$.get('http://library.truman.edu/Mobius/encore_bibno_fetcher.php?bibno=' + cluster_recno, function( data ) {
+		$.get('https://library.truman.edu/Mobius/encore_bibno_fetcher.php?bibno=' + cluster_recno, function( data ) {
 			var encore_regex = /b\d{8}/;
 			encore_recno = encore_regex.exec(data);
 					
 			if (encore_recno) {
-				var encore_link = "http://encore.searchmobius.org/iii/encore/record/C__R" + encore_recno;
+				var encore_link = "https://encore.searchmobius.org/iii/encore/record/C__R" + encore_recno;
 				$("#ICON_INNREACH").parent().attr("href",encore_link);
 			}
 		});
-	});			
+	});	
+
+	addLoadEvent( function() {
+	
+		// Function adds "map-it" button(s) to items table
+		// Get item information
+		var allRows = document.getElementsByTagName('tr');
+		var locatorRow = new Array();
+		var items_found = 0;
+		
+		// Fill array locatorRow with rows having class "bibItemsEntry"
+		for (tr_index = 0; tr_index < allRows.length; tr_index++)
+		{
+			var thisRow = allRows[tr_index];
+			if (typeof(thisRow) == "object")
+			{
+				if(thisRow.className == "bibItemsEntry")
+				{	
+					// this contains the location/call number
+					locatorRow.push(thisRow);
+				}
+			}
+		}
+		
+		// Iterate through items table via locatorRow array
+		if (locatorRow.length > 0) {
+			for (row_index = 0; row_index < locatorRow.length; row_index++)
+			{
+				// var locCell = locatorRow[row_index].cells[0]; // the location
+				var callCell = locatorRow[row_index].cells[1]; // the call number
+				// var noteCell = locatorRow[row_index].cells[2]; //notes
+				// var statusCell = locatorRow[row_index].cells[2]; //the status
+			
+				var locText = locatorRow[row_index].cells[0].textContent.trim();
+				var callText = locatorRow[row_index].cells[1].textContent.trim();
+				// var noteText = locatorRow[row_index].cells[2]; //notes
+				var statusText = locatorRow[row_index].cells[3].textContent.trim(); //the status
+
+				var locRegex = /TRUMAN ([a-zA-Z ]*)/;
+				// var callnoRegex = /^([A-Z]*) ?(\d*)/;
+				var collection = locText.match(locRegex)[1];
+				var maplink = "<a href=\"http://library.truman.edu/callnumber_map/map.php?";
+				maplink += "collection=" + collection;
+				maplink += "&callno="    + callText;
+				maplink += "&status="    + statusText;
+				maplink += "\"><img src=\"/screens/mapit.png\" /></a>";
+				callCell.innerHTML = callCell.innerHTML + maplink;
+
+			}
+		}
+		
+	})	
 
 </script>
 
