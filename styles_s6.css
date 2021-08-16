@@ -12,6 +12,32 @@
 	max-width: 400px;
 }
 
+.bibDisplayUrls table {
+	width: 55%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.bibDisplayUrls td {
+	text-align: center;
+	background-color: #eaeaea;
+	box-sizing: border-box;
+	margin: 2px;
+	font: 400 13.3333px Arial;
+	padding: 2px;
+	border-width: 1px;
+	border-style: outset;
+	border-radius: 5px;
+}
+
+.bibDisplayUrls td:hover {
+    background-color: #003D6A;
+}
+
+.bibDisplayUrls a:hover {
+    color: #fff !important;
+}
+
 #patButAR { display: none; }
 
 #searchscope, #searchscopeDiv, #librarylocationDiv 
