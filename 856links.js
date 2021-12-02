@@ -9,7 +9,7 @@ function hideLinks(){
 	stringsToHide[8] = new Array ("hlg");
 	stringsToHide[9] = new Array ("State Tech", "STATE TECH");
 	stringsToHide[10] = new Array ("MACC");
-	stringsToHide[11] = new Array ("Truman", "truman");
+	stringsToHide[11] = new Array ("Truman", "truman", "TRUMAN");
     
 
 
