@@ -4,9 +4,9 @@ function hideLinks(){
     stringsToHide[1] = new Array ("centralmethodist");
     stringsToHide[3] = new Array ("Missouri Valley", "moval");
 	stringsToHide[4] = new Array ("State Fair", "SFCC");
-	stringsToHide[6] = new Array ("A.T. Still", "atsu");
+	stringsToHide[6] = new Array ("A.T. Still", "atsu", "ATSU");
 	stringsToHide[7] = new Array ("Culver-Stockton");
-	stringsToHide[8] = new Array ("hlg");
+	stringsToHide[8] = new Array ("hlg", "Hannibal");
 	stringsToHide[9] = new Array ("State Tech", "STATE TECH");
 	stringsToHide[10] = new Array ("MACC");
 	stringsToHide[11] = new Array ("Truman", "truman", "TRUMAN");
