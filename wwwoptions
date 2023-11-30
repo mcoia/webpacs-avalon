@@ -825,7 +825,6 @@ LOC_vmrii=/screens/vmrii-ready-ref.png
 LOC_vmroi=/screens/vmroi-ref-office.png
 LOC_vmrri=/screens/vmrii-reference.png
 LOC_vmsii=/screens/vmsii-equipment.png
-LOC_vmvii=/screens/vmvii-audiovisual.png
 LOC_vmvli=/screens/vmvli-pop-video.png
 LOC_vmxii=/screens/vmxii-reserve.png
 LOC_vscii=/screens/vscii-audiobooks.jpg
@@ -841,9 +840,7 @@ LOC_vaaii=/screens/vaaii-awardwinners.png
 LOC_vacii=/screens/vacii-curriculum.png
 LOC_vajii=/screens/vajii-juvenile.png
 LOC_vaiii=/screens/vaiii-commons.pdf
-LOC_varii=/screens/varii-commons-reference.png
 LOC_vavii=/screens/vavii-commons-av.png
-LOC_vapii=/screens/vapii-commons-periodicals.png
 # FOR Encore
 PATFEEDS_MT=10.233.3.7
 IPSSO_USEHTML=t
