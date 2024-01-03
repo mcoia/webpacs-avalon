@@ -816,17 +816,13 @@ LOC_tpxii=/screens/tpxii.htm "target=_blank"
 LOC_tpyii=/screens/tpyii.htm "target=_blank" 
 LOC_tpz*=/screens/tpz.htm "target=_blank"
 LOC_vmcii=/screens/vmcii-young-adult.png 
-LOC_vmrii=/screens/vmrii-ready-ref.png
 LOC_vmroi=/screens/vmroi-ref-office.png
-LOC_vmrri=/screens/vmrii-reference.png
 LOC_vmsii=/screens/vmsii-equipment.png
-LOC_vmvli=/screens/vmvli-pop-video.png
 LOC_vmxii=/screens/vmxii-reserve.png
 LOC_vscii=/screens/vscii-audiobooks.jpg
 LOC_vmaii=/screens/vmaii-archives.jpg
 LOC_vmfii=/screens/vmfii-art.jpg
 LOC_vmiii=/screens/vmiii-main.jpg
-LOC_vmkii=/screens/vmkii-career.jpg
 LOC_vmlii=/screens/vmlii-popular.jpg
 LOC_vmmii=/screens/vmmii-ashford.jpg
 LOC_vmpii=/screens/vmpii-periodicals.jpg
